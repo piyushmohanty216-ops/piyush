@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Mohanty - Graphic Designer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="simple-header">
+  <div class="header-left">
+    <span class="logo-text">Portfolio</span>
+  </div>
+  <nav class="header-right">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#beast-order">Order</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== Hero Section ===== -->
+<section id="hero">
+    <h1>Hello, I'm Piyush Mohanty</h1>
+    <p>I am a <span class="typing"></span></p>
+    <a href="#portfolio">See My Work</a>
+</section>
+
+<!-- ===== About Section ===== -->
+<section id="about">
+    <div class="container about-content">
+       
+        <div class="text">
+            <h2>About Me</h2>
+            <p>I am a passionate graphic designer specializing in creating visually stunning YouTube thumbnails, logos, banners, and social media content. My designs help brands and creators stand out and engage their audience effectively.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Portfolio Section ===== -->
+<section id="portfolio">
+    <h2>My Portfolio</h2>
+    
+
+    <!-- Separate Category Links -->
+    <div class="portfolio-filters">
+        <a href="logos.html" class="filter-btn">Logos</a>
+        <a href="thumbnails.html" class="filter-btn">Thumbnails</a>
+        <a href="banners.html" class="filter-btn">Banners</a>
+        <a href="social.html" class="filter-btn">Social Media</a>
+    </div>
+</section>
+<!-- ===== Pricing & Special Packages ===== -->
+<section id="pricing">
+    <h2>Pricing & Special Packages</h2>
+    <div class="pricing-container">
+
+        <!-- Left Side: Standard Pricing -->
+        <div class="pricing-left">
+            <h3>Standard Pricing</h3>
+            <div class="price-card">
+                <h4>Logo Design</h4>
+                <p>$20 per project</p>
+            </div>
+            <div class="price-card">
+                <h4>Thumbnail Design</h4>
+                <p>$200 per project</p>
+            </div>
+            <div class="price-card">
+                <h4>Banner Design</h4>
+                <p>$10 per project</p>
+            </div>
+            <div class="price-card">
+                <h4>Social Media Design</h4>
+                <p>$25 per project</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Special Packages -->
+        <div class="pricing-right">
+            <h3>Special Packages</h3>
+            <div class="package-card">
+                <h4>Starter Pack</h4>
+                <p>Logo + Thumbnail for $38 (Save $2)</p>
+            </div>
+            <div class="package-card">
+                <h4>Pro Pack</h4>
+                <p>Logo + 3 Thumbnails + Banner for $45</p>
+            </div>
+            <div class="package-card">
+                <h4>Social Media Pack</h4>
+                <p>5 Social Media Posts + 2 Banners for $45</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!-- ===== Skills Section ===== -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="container skills-container">
+        <div class="skill"><h3>Photoshop</h3><div class="skill-bar"><span style="width:90%;"></span></div></div>
+        <div class="skill"><h3>Illustrator</h3><div class="skill-bar"><span style="width:85%;"></span></div></div>
+        <div class="skill"><h3>Canva</h3><div class="skill-bar"><span style="width:95%;"></span></div></div>
+        <div class="skill"><h3>Figma</h3><div class="skill-bar"><span style="width:80%;"></span></div></div>
+    </div>
+</section>
+<section id="beast-order">
+  <div class="beast-container">
+    <!-- LEFT INFO PANEL -->
+    <div class="beast-left">
+      <h1>🚀 Create Your Order</h1>
+      <p>Welcome to the next-level design portal! Fill your details, select your projects, add them to your cart, and click "Place Order". Your Gmail will open automatically with all order details ready to send.</p>
+    </div>
+
+    <!-- RIGHT FORM PANEL -->
+    <div class="beast-right">
+      <form id="orderForm">
+        <label><span>Your Name</span>
+          <input type="text" id="client_name" placeholder="Your Name" required>
+        </label>
+        <label><span>Your Email</span>
+          <input type="email" id="client_email" placeholder="Your Email" required>
+        </label>
+        <label><span>Project Type</span>
+          <select id="project_type" required>
+            <option value="">Choose</option>
+            <option>Logo</option>
+            <option>Thumbnail</option>
+            <option>Banner</option>
+            <option>Social Media</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label><span>Special Package</span>
+          <select id="package_type" required>
+            <option value="">Choose</option>
+            <option>Basic</option>
+            <option>Standard</option>
+            <option>Premium</option>
+          </select>
+        </label>
+        <label><span>Quantity</span>
+          <input type="number" id="quantity" min="1" value="1" required>
+        </label>
+        <label><span>Additional Requirements</span>
+          <textarea id="requirements" rows="4" placeholder="Describe your project details"></textarea>
+        </label>
+        <button type="button" id="addToCart">Add to Cart</button>
+      </form>
+
+      <div class="cart-container">
+        <h2>Your Cart</h2>
+        <ul id="cartList"></ul>
+        <button id="placeOrder">Place Order</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+
+<!-- ===== Clients Review Section ===== -->
+<section id="reviews">
+    <h2>What Clients Say</h2>
+
+    <!-- Review Submission Form -->
+    <div class="review-form">
+        <input type="text" id="clientName" placeholder="Your Name">
+        <input type="text" id="clientType" placeholder="Your Profession / Type">
+        <textarea id="clientReview" placeholder="Write your review"></textarea>
+        <button id="submitReview">Submit Review</button>
+    </div>
+
+    <!-- Reviews Display -->
+    <div class="container reviews-container" id="reviewsContainer">
+        <!-- Reviews will appear here dynamically -->
+    </div>
+</section>
+<!-- ===== FAQ Section ===== -->
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">1. How long does a project take?</button>
+            <div class="faq-answer">
+                <p>Typically, a logo or thumbnail takes 1-3 days depending on complexity. Banners and social media projects may take 2-5 days.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">2. Do you provide revisions?</button>
+            <div class="faq-answer">
+                <p>Yes! I offer 2-3 free revisions per project to ensure you’re satisfied with the final design.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">3. What file formats will I receive?</button>
+            <div class="faq-answer">
+                <p>You will receive PNG, JPEG, and optionally editable PSD/AI files depending on the project type.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">4. Can I order multiple projects at once?</button>
+            <div class="faq-answer">
+                <p>Yes! You can submit multiple projects through the contact form, and I’ll provide a combined timeline and pricing.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">5. How do I pay for the project?</button>
+            <div class="faq-answer">
+                <p>Payments can be made via UPI, PayPal, or other digital payment methods. Details will be provided after confirming the order.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Chatbot Avatar -->
+<div id="chatbot-avatar">
+  <img src="https://i.imgur.com/8Km9tLL.png" alt="AI Avatar" id="avatar-img">
+</div>
+
+<!-- Chatbot Widget -->
+<div id="chatbot-widget">
+  <div id="chatbot-header">
+    <span>AI Assistant</span>
+    <div>
+      <button id="chat-minimize">–</button>
+      <button id="chat-close">×</button>
+    </div>
+  </div>
+  <div id="chatbot-body">
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-suggestions"></div>
+    <div id="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type your message...">
+      <button id="chatbot-send">Send</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ===== Footer ===== -->
+<footer>
+    <p>© 2025 Piyush Mohanty | Designed with ❤️</p>
+    <div>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<!-- ===== JS ===== -->
+<script>
+    // Typing animation
+    const words = ["Graphic Designer", "YouTube Thumbnails designer", "Logos designer", "Banners designer", "Social Media Designer"];
+    let i=0, j=0, currentWord='', isDeleting=false;
+
+    function type() {
+      if(i>=words.length) i=0;
+      currentWord = words[i];
+      if(!isDeleting){
+        document.querySelector('.typing').textContent = currentWord.slice(0,j+1);
+        j++;
+        if(j===currentWord.length){isDeleting=true; setTimeout(type,1000); return;}
+      } else {
+        document.querySelector('.typing').textContent = currentWord.slice(0,j-1);
+        j--;
+        if(j===0){isDeleting=false; i++;}
+      }
+      setTimeout(type,150);
+    }
+    type();
+
+    // Scroll animation
+    const faders = document.querySelectorAll('.skill, #about img, #about .text');
+    const appearOptions = {threshold:0.2, rootMargin:"0px 0px -50px 0px"};
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+        entries.forEach(entry=>{
+            if(!entry.isIntersecting) return;
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0) scale(1)';
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader=>{
+        appearOnScroll.observe(fader);
+    });
+</script>
+<script>
+// Animate works one by one
+const works = document.querySelectorAll('.work-item');
+let delay = 0;
+works.forEach(item => {
+    setTimeout(() => {
+        item.classList.add('visible');
+    }, delay);
+    delay += 500; // 0.5s delay between each image
+});
+</script>
+<script>
+// ---------- Utilities ----------
+const STORAGE_KEY = 'clientReviews';
+
+// Return array of reviews (or empty array)
+function getReviews() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  } catch (e) {
+    console.error('Failed to parse reviews from storage', e);
+    return [];
+  }
+}
+
+// Save array to storage
+function saveReviews(reviews) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+}
+
+// ---------- Render reviews ----------
+function renderReviews() {
+  const reviewsContainer = document.getElementById('reviewsContainer');
+  if (!reviewsContainer) return;
+  reviewsContainer.innerHTML = '';
+
+  const reviews = getReviews();
+
+  if (reviews.length === 0) {
+    reviewsContainer.innerHTML = '<p style="color:#bbb; text-align:center; width:100%;">No reviews yet — be the first to add one!</p>';
+    return;
+  }
+
+  reviews.forEach((review, index) => {
+    const div = document.createElement('div');
+    div.className = 'review-card';
+    div.innerHTML = `
+      <h3>${escapeHtml(review.name)}</h3>
+      <span>${escapeHtml(review.type)}</span>
+      <p>"${escapeHtml(review.message)}"</p>
+      <button class="delete-btn" data-index="${index}">Delete</button>
+    `;
+    reviewsContainer.appendChild(div);
+
+    // animate in
+    setTimeout(() => div.classList.add('visible'), index * 150);
+  });
+}
+
+// Very small HTML escape to avoid accidental markup injection
+function escapeHtml(str) {
+  if (!str && str !== 0) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+// ---------- Add review ----------
+document.getElementById('submitReview').addEventListener('click', () => {
+  const nameEl = document.getElementById('clientName');
+  const typeEl = document.getElementById('clientType');
+  const msgEl  = document.getElementById('clientReview');
+
+  const name = nameEl.value.trim();
+  const type = typeEl.value.trim();
+  const message = msgEl.value.trim();
+
+  if (!name || !type || !message) {
+    alert('Please fill all fields!');
+    return;
+  }
+
+  const reviews = getReviews();
+  reviews.push({ name, type, message, createdAt: Date.now() });
+  saveReviews(reviews);
+
+  // clear inputs
+  nameEl.value = '';
+  typeEl.value = '';
+  msgEl.value = '';
+
+  renderReviews();
+});
+
+// ---------- Delete handler (event delegation) ----------
+document.getElementById('reviewsContainer').addEventListener('click', (e) => {
+  const btn = e.target.closest('.delete-btn');
+  if (!btn) return;
+
+  const index = Number(btn.getAttribute('data-index'));
+  if (Number.isNaN(index)) return;
+
+  // Confirm with the user before deleting
+  const ok = confirm('Are you sure you want to delete this review? This action cannot be undone in this browser.');
+  if (!ok) return;
+
+  const reviews = getReviews();
+  if (index < 0 || index >= reviews.length) return;
+
+  reviews.splice(index, 1);      // remove the review at index
+  saveReviews(reviews);
+  renderReviews();
+});
+
+// ---------- Initial load ----------
+document.addEventListener('DOMContentLoaded', () => {
+  renderReviews();
+});
+</script>
+<script>
+// FAQ Accordion functionality
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', () => {
+        // Close other open answers
+        faqItems.forEach(i => {
+            if(i !== item) i.classList.remove('active');
+        });
+        // Toggle current answer
+        item.classList.toggle('active');
+    });
+});
+</script>
+<script>
+// Animate pricing/package cards when visible
+function animateCards() {
+    const cards = document.querySelectorAll('.price-card, .package-card');
+    const windowHeight = window.innerHeight;
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if(rect.top < windowHeight - 50){
+            card.classList.add('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', animateCards);
+window.addEventListener('load', animateCards);
+</script>
+
+<script>
+document.getElementById('beastForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const project = document.getElementById('project_type').value;
+  const message = document.getElementById('message').value;
+
+  const mailtoLink = `mailto:piyushmohanty657@gmail.com?subject=${encodeURIComponent("New Order from "+name)}&body=${encodeURIComponent(
+    "Name: " + name + "\n" +
+    "Email: " + email + "\n" +
+    "Project Type: " + project + "\n" +
+    "Message:\n" + message
+  )}`;
+
+  // Open Gmail / default email client
+  window.location.href = mailtoLink;
+});
+</script>
+<script>
+let cart = [];
+
+document.getElementById('addToCart').addEventListener('click', () => {
+  const project = document.getElementById('project_type').value;
+  const packageType = document.getElementById('package_type').value;
+  const quantity = document.getElementById('quantity').value;
+
+  if(!project || !packageType || !quantity){
+    alert('Please select all fields!');
+    return;
+  }
+
+  cart.push({project, packageType, quantity});
+  updateCart();
+});
+
+function updateCart(){
+  const cartList = document.getElementById('cartList');
+  cartList.innerHTML = '';
+  cart.forEach((item,index)=>{
+    const li = document.createElement('li');
+    li.textContent = `${item.project} - ${item.packageType} x ${item.quantity}`;
+    cartList.appendChild(li);
+  });
+}
+
+document.getElementById('placeOrder').addEventListener('click', ()=>{
+  const name = document.getElementById('client_name').value;
+  const email = document.getElementById('client_email').value;
+  const requirements = document.getElementById('requirements').value;
+
+  if(!name || !email){
+    alert('Please fill your name and email!');
+    return;
+  }
+  if(cart.length===0){
+    alert('Your cart is empty!');
+    return;
+  }
+
+  let bodyText = `Client Name: ${name}\nClient Email: ${email}\n\nAdditional Requirements:\n${requirements}\n\nOrder Details:\n`;
+  cart.forEach((item,idx)=>{
+    bodyText += `${idx+1}. ${item.project} - ${item.packageType} x ${item.quantity}\n`;
+  });
+
+  const mailtoLink = `mailto:piyushmohanty657@gmail.com?subject=${encodeURIComponent("New Order from "+name)}&body=${encodeURIComponent(bodyText)}`;
+  window.location.href = mailtoLink;
+});
+</script>
+<script>
+document.querySelectorAll('header nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e){
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+<script>
+// ===== Elements =====
+const avatar = document.getElementById('chatbot-avatar');
+const widget = document.getElementById('chatbot-widget');
+const minimizeBtn = document.getElementById('chat-minimize');
+const closeBtn = document.getElementById('chat-close');
+const sendBtn = document.getElementById('chatbot-send');
+const inputEl = document.getElementById('chatbot-input');
+const messagesEl = document.getElementById('chatbot-messages');
+const suggestionsEl = document.getElementById('chatbot-suggestions');
+
+// ===== 50+ Q&A triggers =====
+const QA = [
+  {triggers:['hello','hi','hey'], answer:"Hi! I'm your AI assistant. How can I help?"},
+  {triggers:['pricing','price','cost'], answer:"Standard pricing is ROUND $10 & $20 per project."},
+  {triggers:['services','service'], answer:"I design Logos, Thumbnails, Banners, Social Media graphics."},
+  {triggers:['revision','revisions','edit'], answer:"2-3 free revisions per project included."},
+  {triggers:['order','how to order','submit'], answer:"Type your requirements and send them here."},
+  {triggers:['logo example','logo samples'], answer:"Portfolio section has logo samples."},
+  {triggers:['thumbnail example'], answer:"Portfolio has thumbnail examples."},
+  {triggers:['banner example'], answer:"See banner examples in Portfolio."},
+  {triggers:['branding package','bundle'], answer:"Branding package includes logo, banner, social posts."},
+  {triggers:['express','urgent'], answer:"Express delivery available on request."},
+  {triggers:['payment','paypal','upi'], answer:"Payment via PayPal, UPI, Google Pay."},
+  {triggers:['file formats','format'], answer:"Files delivered: PNG/JPG, source on request."},
+  {triggers:['bulk','many projects'], answer:"Bulk orders get discounted rates."},
+  {triggers:['refund','money back'], answer:"Refunds handled case by case."},
+  {triggers:['contact','reach','email'], answer:"Contact via email: piyushmohanty657@gmail.com."},
+  {triggers:['portfolio','work','projects'], answer:"Portfolio section has all projects."},
+  {triggers:['hours','working hours'], answer:"Working IST, typical response within 24h."},
+  {triggers:['cancel','cancellation'], answer:"Cancellations accepted before delivery; partial refund may apply."},
+  {triggers:['special','package','starter pack','pro pack'], answer:"See package options."},
+  {triggers:['how to order','workflow','process'], answer:"Submit requirements → confirm → pay → receive delivery."},
+  {triggers:['guarantee','quality'], answer:"Guaranteed quality with revisions included."},
+  {triggers:['sample','demo'], answer:"Check portfolio for samples."},
+  {triggers:['custom','unique'], answer:"Custom designs available."},
+  {triggers:['file delivery','source files'], answer:"Source files provided on request."},
+  {triggers:['revision count','extra revision'], answer:"Standard 2-3 revisions included."},
+  {triggers:['branding help','brand guide'], answer:"Branding guidance available."},
+  {triggers:['project updates','track'], answer:"Updates sent via chat/email."},
+  {triggers:['consultation','advice'], answer:"Free consultation available."},
+  {triggers:['timeline','days'], answer:"Delivery time varies per project."},
+  {triggers:['social media','template'], answer:"Social media templates included."},
+  {triggers:['logo revision'], answer:"Logo revisions included."},
+  {triggers:['thumbnail revision'], answer:"Thumbnail revisions included."},
+  {triggers:['banner revision'], answer:"Banner revisions included."},
+  {triggers:['brand revision'], answer:"Branding revisions included."},
+  {triggers:['urgent delivery'], answer:"Contact for express delivery."},
+  {triggers:['bulk discount'], answer:"Bulk orders get discounts."},
+  {triggers:['payment methods','payment options'], answer:"Pay via PayPal, UPI, Google Pay."},
+  {triggers:['contact form','order form'], answer:"Use order form to submit requirements."},
+  {triggers:['portfolio link'], answer:"Portfolio available on main website."},
+  {triggers:['logo package'], answer:"Logo package includes 1 logo, 2 revisions."},
+  {triggers:['thumbnail package'], answer:"Thumbnail package includes 2 thumbnails, 2 revisions."},
+  {triggers:['banner package'], answer:"Banner package includes 1 banner, 2 revisions."},
+  {triggers:['social package'], answer:"Social package includes 5 posts, 2 revisions."},
+  {triggers:['branding package'], answer:"Branding package includes logo, banner, social posts."},
+  {triggers:['express package'], answer:"Express package available on request."},
+  {triggers:['consulting'], answer:"Consulting available before order."},
+  {triggers:['support'], answer:"Support via email and order form."},
+  {triggers:['questions'], answer:"Ask me anything about projects or pricing."},
+  {triggers:['feedback'], answer:"Feedback is always welcome."},
+  {triggers:['collaboration'], answer:"Open for collaborations; send details."},
+  {triggers:['updates'], answer:"Updates sent regularly per project."},
+  {triggers:['demo video'], answer:"Demo videos can be shared on request."},
+  {triggers:['file sharing'], answer:"Files shared via email or cloud link."},
+  {triggers:['team'], answer:"I work individually, but can manage teams if needed."},
+  {triggers:['design style','style'], answer:"Modern, minimalistic, and professional designs."}
+];
+
+// ===== Suggestion Buttons =====
+['Pricing','Services','Revisions','Portfolio','Order'].forEach(text=>{
+  const b=document.createElement('button');
+  b.className='suggest';
+  b.textContent=text;
+  b.addEventListener('click',()=> handleUserMessage(text));
+  suggestionsEl.appendChild(b);
+});
+
+// ===== Append Message =====
+function appendMessage(text, who='bot'){
+  const div=document.createElement('div');
+  div.className='msg '+(who==='user'?'user':'bot');
+  div.textContent=text;
+  messagesEl.appendChild(div);
+  messagesEl.scrollTop=messagesEl.scrollHeight;
+}
+
+// ===== Find Answer =====
+function findAnswer(message){
+  const text=message.toLowerCase();
+  for(const qa of QA){
+    for(const t of qa.triggers){
+      if(text.includes(t)) return qa.answer;
+    }
+  }
+  return "Sorry, I didn't get that. Try 'pricing', 'services', or 'order'.";
+}
+
+// ===== Handle User Input =====
+function handleUserMessage(raw){
+  const msg=(raw || inputEl.value || '').trim();
+  if(!msg) return;
+  appendMessage(msg,'user');
+  inputEl.value='';
+  setTimeout(()=>appendMessage(findAnswer(msg),'bot'),300);
+}
+
+// ===== Event Listeners =====
+sendBtn.addEventListener('click',()=>handleUserMessage());
+inputEl.addEventListener('keydown',e=>{if(e.key==='Enter') handleUserMessage();});
+
+// Minimize button
+minimizeBtn.addEventListener('click',()=>{
+  const body=document.getElementById('chatbot-body');
+  if(body.style.display==='none'){ 
+    body.style.display='flex'; 
+    minimizeBtn.textContent='–'; 
+  } else { 
+    body.style.display='none'; 
+    minimizeBtn.textContent='+'; 
+  }
+});
+
+// Close button → clears messages
+closeBtn.addEventListener('click',()=>{
+  widget.style.display='none';
+  messagesEl.innerHTML = ''; // clear all messages
+});
+
+// Avatar click → open widget with greeting
+avatar.addEventListener('click',()=>{
+  widget.style.display='flex';
+  widget.style.bottom='20px';
+  appendMessage("Hi! I'm here to help. Try 'pricing' or 'services'.",'bot');
+});
+
+// Initial greeting on page load
+window.addEventListener('load',()=>{
+  setTimeout(()=> appendMessage("Hi! I'm here to help. Try 'pricing' or 'services'.",'bot'),500);
+});
+</script>
+
+
+
+
+</body>
+</html>
